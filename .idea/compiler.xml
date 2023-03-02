@@ -9,8 +9,10 @@
         <module name="SaturdayProject2" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="SaturdayProject2" target="19" />
-    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="SaturdayProject2" options="" />
+    </option>
   </component>
 </project>
