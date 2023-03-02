@@ -1,0 +1,13 @@
+Index: src/test/java/ProjectLive2/TestCase_Title4.java
+===================================================================
+diff --git a/src/test/java/ProjectLive2/TestCase_Title4.java b/src/test/java/ProjectLive2/TestCase_Title4.java
+--- a/src/test/java/ProjectLive2/TestCase_Title4.java	
++++ b/src/test/java/ProjectLive2/TestCase_Title4.java	
+@@ -28,6 +28,7 @@
+         }
+ 
+         System.out.println(actualResult);
++        driver.quit();
+     }
+ }
+ 
