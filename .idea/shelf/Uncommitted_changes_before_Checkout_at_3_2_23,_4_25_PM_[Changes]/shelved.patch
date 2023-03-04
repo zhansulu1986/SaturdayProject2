@@ -1,0 +1,14 @@
+Index: src/test/java/ProjectLive2/TestCase_Title2.java
+===================================================================
+diff --git a/src/test/java/ProjectLive2/TestCase_Title2.java b/src/test/java/ProjectLive2/TestCase_Title2.java
+--- a/src/test/java/ProjectLive2/TestCase_Title2.java	
++++ b/src/test/java/ProjectLive2/TestCase_Title2.java	
+@@ -17,7 +17,7 @@
+         driver.get("https://demoqa.com/");
+         JavascriptExecutor js = (JavascriptExecutor) driver;
+         js.executeScript("window.scroll(0,500)");
+-                // scrolled down by 3000 pixels
++                // scrolled down by 500 pixels
+ 
+         WebElement interaction= driver.findElement(By.xpath("//h5[text()='Interactions']"));
+       interaction.click();

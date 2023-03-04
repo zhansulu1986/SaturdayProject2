@@ -1,0 +1,61 @@
+Index: src/test/java/ProjectLive2/TestCase_17_DatePicker.java
+===================================================================
+diff --git a/src/test/java/ProjectLive2/TestCase_17_DatePicker.java b/src/test/java/ProjectLive2/TestCase_17_DatePicker.java
+new file mode 100644
+--- /dev/null	
++++ b/src/test/java/ProjectLive2/TestCase_17_DatePicker.java	
+@@ -0,0 +1,18 @@
++package ProjectLive2;
++
++import org.openqa.selenium.By;
++import org.openqa.selenium.WebElement;
++
++public class TestCase_17_DatePicker extends UtilityClass{
++    public static void main(String[] args) {
++        /*
++        1. Go to the url: https://demoqa.com/datepicker/
++2. Write the date 12/21/2019 in the input field;
++Expected results: After writing a date in format 12/21/2019 you should see a
++calendar with highlighted date 21/12/2019
++         */
++driver.get("https://demoqa.com/date-picker/");
++        WebElement calender= driver.findElement(By.id("datePickerMonthYearInput"));
++        calender.click();
++    }
++}
+Index: src/test/java/ProjectLive2/TestCase_16_DatePicker.java
+===================================================================
+diff --git a/src/test/java/ProjectLive2/TestCase_16_DatePicker.java b/src/test/java/ProjectLive2/TestCase_16_DatePicker.java
+new file mode 100644
+--- /dev/null	
++++ b/src/test/java/ProjectLive2/TestCase_16_DatePicker.java	
+@@ -0,0 +1,29 @@
++package ProjectLive2;
++
++import org.openqa.selenium.By;
++import org.openqa.selenium.WebElement;
++
++public class TestCase_16_DatePicker extends UtilityClass {
++    public static void main(String[] args) {
++        /*
++  1. Go to the url: https://demoqa.com/date-picker/
++2. Click on the input field;
++3. Check if the highlighted date is today’s date;
++         */
++        driver.get("https://demoqa.com/date-picker/");
++        //<input type="text" id="datePickerMonthYearInput" class="" value="03/01/2023">
++        WebElement calender= driver.findElement(By.id("datePickerMonthYearInput"));
++      calender.click();
++        String expectedResult="https://demoqa.com/date-picker/";
++        String actualResult=driver.getCurrentUrl();
++        if(actualResult.equals(expectedResult)){
++            System.out.println("passed");
++        }else{
++            System.out.println("failed");
++        }
++
++        System.out.println(actualResult);
++        driver.quit();
++    }
++    }
++
